@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Guidance WebApp</title>
+    <meta name="description" content="Student guidance platform providing roadmaps, skills, and resources for tech careers">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <h1>Student Guidance</h1>
+        <p class="tag">Roadmaps · Skills · Resources</p>
+    </header>
+
+    <main class="container" role="main">
+        <aside class="sidebar" role="complementary" aria-label="Career roles">
+            <h2>Roles</h2>
+            <nav aria-label="Role navigation">
+                <ul id="roles-list">
+                    <li data-role="frontend" tabindex="0" role="button">Frontend Developer</li>
+                    <li data-role="backend" tabindex="0" role="button">Backend Developer</li>
+                    <li data-role="data" tabindex="0" role="button">Data Scientist</li>
+                    <li data-role="analyst" tabindex="0" role="button">Data Analyst</li>
+                    <li data-role="ethicalhacker" tabindex="0" role="button">Ethical Hacker</li>
+                    <li data-role="cloud" tabindex="0" role="button">Cloud Architect</li>
+                    <li data-role="devops" tabindex="0" role="button">DevOps Engineer</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="content" role="region" aria-label="Role details">
+            <article id="role-card" class="card">
+                <h2 id="role-title">Select a role</h2>
+                <p id="role-desc">Click a role on the left to view the roadmap, tools and resources.</p>
+
+                <section aria-labelledby="roadmap-heading">
+                    <h3 id="roadmap-heading">Roadmap</h3>
+                    <ol id="roadmap" aria-label="Learning roadmap"></ol>
+                </section>
+
+                <section aria-labelledby="tech-heading">
+                    <h3 id="tech-heading">Recommended Technologies</h3>
+                    <ul id="tech-list" aria-label="Recommended technologies"></ul>
+                </section>
+
+                <section aria-labelledby="resources-heading">
+                    <h3 id="resources-heading">Resources</h3>
+                    <ul id="resources" aria-label="Learning resources"></ul>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; Student Guidance · Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
